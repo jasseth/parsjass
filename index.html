@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PARSJASS</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div id="page-wrapper" class="clearfix">
+        <h1>ParsJASS</h1>
+
+        <!--<form action="" method="POST" id="file-form">-->
+        <div class="field">
+            <textarea name="content" id="content" placeholder="Type your content here...">
+hacia /var i = 0; i < 9; i++\ [
+  var n = "text"
+]
+            
+cuando_esto/i<5\[
+]
+            
+afirmacion /i>5 && i<=10\ [
+  imprima("test condicional")
+] negacion [
+imprima("test negacio")
+]
+            
+formar [
+  var e = "text"
+] cuando_esto /i < 5\</textarea>
+        </div>
+        <div class="field">
+            <button id=ejecutar type="submit">validar</button>
+            <div id="messages"></div>
+        </div>
+        <!--</form>-->
+
+    </div>
+    <!-- partial -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./parser.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
